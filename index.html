@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head Tracking Example</title>
+    <style>
+        #video {
+            transform: scaleX(-1); /* Flip video horizontally for a more natural feel */
+        }
+        #canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none; /* Allow clicks through the canvas */
+        }
+    </style>
+</head>
+<body>
+    <h1>Head Tracking Example</h1>
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <script src="index.js"></script>
+</body>
+</html>
