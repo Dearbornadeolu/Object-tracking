@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         function trackColor() {
             var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
             var data = imageData.data;
+            console.log(data);
 
             // Example: Track a red color (adjust these values based on your object's color)
             var targetColor = [255, 0, 0];
